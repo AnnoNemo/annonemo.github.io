@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Circe';
+    src: url(../fnt/Circe-Regular.eot');
+    src: local('Circe'), local('Circe-Regular'),
+    url('../fnt/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fnt/Circe-Regular.woff2') format('woff2'),
+    url('../fnt/Circe-Regular.woff') format('woff'),
+    url('../fnt/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circe Extra';
+    src: url('../fnt/Circe-ExtraBold.eot');
+    src: local('Circe Extra Bold'), local('Circe-ExtraBold'),
+    url('../fnt/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fnt/Circe-ExtraBold.woff2') format('woff2'),
+    url('../fnt/Circe-ExtraBold.woff') format('woff'),
+    url('../fnt/Circe-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body
+{
+    font-family: 'Circe', 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+.bold
+{
+    font-family: 'Circe Extra', 'Roboto', sans-serif;
+}
+
+.padding
+{
+    padding-left: 153px;
+    padding-right: 153px;
+}
+
+.container_main
+{
+    width: 1440px;
+    background-color: #f8f8f8;
+    margin: 0px auto;
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    border-color: #ebebeb;
+}
+
+.header_menu
+{
+    position: fixed;
+    display: flex;
+    background-color: #f8f8f8;
+    width: 1134px;
+    height: 11.86%;
+    /* max-height: 116px; */
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #aaaaaa;
+    z-index: 10;
+}
+
+.top
+{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo
+{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav__item
+{
+    margin-right: 20px;
+}
+
+.nav__item:last-child
+{
+    margin-right: 0px;
+}
+
+li
+{
+    display: inline;
+    list-style-type: none;
+    padding: 0px;
+    font-size: 14px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.phone
+{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.header__content
+{
+    display: flex;
+    height: 764px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content__text
+{
+    flex-basis: 40%;
+}
+
+.header-content__title
+{
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 100%;
+}
+
+.header-content__description
+{
+    font-size: 17px;
+    line-height: 160%;
+}
+
+.button
+{
+    box-shadow: 0;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #FF6C6C;
+    width: 250px;
+    height: 60px;
+    margin-top: 42px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 10px 25px #ff6c6c80;
+}
+
+.header-content__image
+{
+    display: flex;
+    width: 632px;
+    height: 436px;
+}
+
+.section__goods
+{
+    background-color: #ffffff;
+    height: 1249px;
+    padding-top: 100px;
+}
+
+.section__title
+{
+    margin: 0px 0px 50px 0px;
+}
+
+.goods__cards
+{
+    display: flex;
+    flex-basis: 30%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card__item
+{
+    width: 298px;
+    height: 472px;
+    background: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(104, 104, 104, 0.102);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.card__item-margin
+{
+    margin-bottom: 30px;
+}
+
+.card__image
+{
+    width: 300px;
+    height: 300px;
+}
+
+.card__text
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.card__title
+{
+    text-align: left;
+    font-size: 16px;
+    width: 187px;
+    margin: 0px;
+}
+
+.card__price
+{
+    font-size: 36px;
+}
+
+.card__button
+{
+    width: 100%;
+    margin-top: 27px;
+}
+
+.section__review
+{
+    background-color: #ffffff;
+    height: 507px;
+    padding-top: 73px;
+}
+
+.cards__review
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.review_card
+{
+    /* width: 261px;
+    height: 250px; */
+    border: 1px solid #EDEDED;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(131, 131, 131, 0.25);
+    border-radius: 10px;
+    flex-basis: 23.01%;
+    padding: 20px 30px;
+}
+
+.user_name
+{
+    font-size: 14px;
+}
+
+.text_review
+{
+    font-size: 14px;
+    line-height: 21px;
+}
