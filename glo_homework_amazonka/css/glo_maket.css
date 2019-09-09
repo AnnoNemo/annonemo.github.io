@@ -1,0 +1,491 @@
+@font-face {
+    font-family: 'Circe';
+    src: url('../fnt/Circe-Regular.eot');
+    src: local('Circe'), local('Circe-Regular'),
+    url('../fnt/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fnt/Circe-Regular.woff2') format('woff2'),
+    url('../fnt/Circe-Regular.woff') format('woff'),
+    url('../fnt/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circe Extra';
+    src: url('../fnt/Circe-ExtraBold.eot');
+    src: local('Circe Extra Bold'), local('Circe-ExtraBold'),
+    url('../fnt/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fnt/Circe-ExtraBold.woff2') format('woff2'),
+    url('../fnt/Circe-ExtraBold.woff') format('woff'),
+    url('../fnt/Circe-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*, *:after, *:before
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Circe', 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+.bold
+{
+    font-family: 'Circe Extra', 'Roboto', sans-serif;
+}
+
+.container-main
+{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.header-menu
+{
+    /* повторяется у всех */
+    padding-left: 153px;
+    padding-right: 153px;
+    /* конец */
+    position: fixed;
+    display: flex;
+    max-width: inherit;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    max-height: 116px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    border-bottom: 1px solid #aaaaaa;
+    background-color: #f8f8f8;
+}
+
+.logo
+{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav__item
+{
+    margin-right: 20px;
+}
+
+.nav__item:last-child
+{
+    margin-right: 0px;
+}
+
+li
+{
+    display: inline;
+    list-style-type: none;
+    padding: 0px;
+    font-size: 14px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.phone
+{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.header__content
+{
+    /* повторяется у всех */
+    padding-left: 153px;
+    padding-right: 153px;
+    /* конец */
+    background-color: #f8f8f8;
+    display: flex;
+    height: 764px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content__text
+{
+    flex-basis: 40%;
+}
+
+.header-content__title
+{
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 100%;
+}
+
+.header-content__description
+{
+    font-size: 17px;
+    line-height: 160%;
+}
+
+.button
+{
+    box-shadow: 0;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #FF6C6C;
+    width: 250px;
+    height: 60px;
+    margin-top: 42px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 10px 25px #ff6c6c80;
+}
+
+.header-content__image
+{
+    display: flex;
+    width: 632px;
+    height: 436px;
+}
+
+.section__goods
+{
+    /* повторяется у всех */
+    padding-left: 153px;
+    padding-right: 153px;
+    /* конец */
+    padding-top: 100px;
+    padding-bottom: 43px;
+    border-left: 1px solid #f8f8f8;
+    border-right: 1px solid #f8f8f8;
+}
+
+.section__title
+{
+    margin: 0px 0px 50px 0px;
+}
+
+.goods__cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card__item
+{
+    background: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(104, 104, 104, 0.102);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.card__item-margin
+{
+    margin-bottom: 30px;
+}
+
+.card__image
+{
+    width: 300px;
+    height: 300px;
+}
+
+.card__text
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.card__title
+{
+    text-align: left;
+    font-size: 16px;
+    width: 187px;
+    margin: 0px;
+}
+
+.card__price
+{
+    font-size: 36px;
+}
+
+.card__button
+{
+    width: 100%;
+    margin-top: 27px;
+}
+
+.section__review
+{
+    /* повторяется у всех */
+    padding-left: 153px;
+    padding-right: 153px;
+    /* конец */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #ffffff;
+    border-left: 1px solid #f8f8f8;
+    border-right: 1px solid #f8f8f8;
+}
+
+.cards__review
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.review_card
+{
+    border: 1px solid #EDEDED;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(131, 131, 131, 0.25);
+    border-radius: 10px;
+    flex-basis: 23.01%;
+    padding: 20px 20px;
+    margin-right: 20px;
+}
+
+.user_name
+{
+    font-size: 14px;
+}
+
+.text_review
+{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer.section
+{
+    /* повторяется у всех */
+    padding-left: 153px;
+    padding-right: 153px;
+    /* конец */
+    background: #F8F8F8;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contacts
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__form
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 49%;
+}
+
+.form__block
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.input
+{
+    font-size: 14px;
+    box-shadow: 0px 4px 4px rgba(217, 217, 217, 0.25);
+    border-radius: 5px;
+    border: none;
+    padding: 25px 0px 25px 30px;
+}
+
+.form__input
+{
+    width: 47%;
+}
+
+.form__textarea
+{
+    width: 100%;
+}
+
+.buttons_container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form__button
+{
+    margin: 0px;
+    width: 260px;
+}
+
+.social
+{
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social__link
+{
+    margin-right: 23px;
+}
+
+.social__link:last-child
+{
+    margin-right: 0px;
+}
+
+.social__image
+{
+    display: block;
+}
+
+.map
+{
+    width: 45%;
+}
+
+@media (max-width: 1410px)
+{
+    .goods__cards
+    {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .header-menu
+    {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .header__content
+    {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .section__goods
+    {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+    .section__review
+    {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .container-main
+    {
+        max-width: 960px;
+    }
+
+    .header-content__title
+    {
+        font-size: 34px;
+        min-width: 270px;
+    }
+
+    .header-content__image > img
+    {
+        width: 506px;
+        height: 349px;
+    }
+
+    .cards__review
+    {
+        justify-content: space-around;
+    }
+
+    .card__item
+    {
+        margin: 10px auto;
+    }
+
+    .review_card
+    {
+        flex-basis: 45%;
+        margin-bottom: 30px;
+    }
+
+    .contacts
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .map
+    {
+    margin-top: 30px;
+    }
+}
+
+@media (max-width: 990px)
+{
+    .header-menu
+    {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .header__content
+    {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .section__goods
+    {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+    .section__review
+    {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .container-main
+    {
+        max-width: 760px;
+    }
+
+    .header__content
+    {
+        padding-top: 160px;
+        padding-bottom: 100px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .header-content__image > img
+    {
+        width: 632px;
+        height: 436px;
+    }
+}
