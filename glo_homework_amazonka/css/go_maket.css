@@ -23,6 +23,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+*, *:after, *:before
+{
+    box-sizing: border-box;
+}
+
 body
 {
     font-family: 'Circe', 'Roboto', sans-serif;
@@ -42,7 +47,7 @@ body
 
 .container_main
 {
-    width: 1440px;
+    width: 75.67%;
     background-color: #f8f8f8;
     margin: 0px auto;
     border-width: 0px 1px 0px 1px;
@@ -55,12 +60,9 @@ body
     position: fixed;
     display: flex;
     background-color: #f8f8f8;
-    width: 1134px;
+    width: inherit;
     height: 11.86%;
-    /* max-height: 116px; */
-    border-width: 0px 0px 1px 0px;
-    border-style: solid;
-    border-color: #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
     z-index: 10;
 }
 
