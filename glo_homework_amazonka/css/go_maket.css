@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Circe';
-    src: url(../fnt/Circe-Regular.eot');
+    src: url('../fnt/Circe-Regular.eot');
     src: local('Circe'), local('Circe-Regular'),
     url('../fnt/Circe-Regular.eot?#iefix') format('embedded-opentype'),
     url('../fnt/Circe-Regular.woff2') format('woff2'),
@@ -266,4 +266,96 @@ a
 {
     font-size: 14px;
     line-height: 21px;
+}
+
+.footer.section
+{
+    height: 645px;
+    padding-top: 100px;
+}
+
+.contacts
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__form
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 49%;
+}
+
+.form
+{
+    /* djk */
+}
+
+.form__block
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.input
+{
+    font-size: 14px;
+    box-shadow: 0px 4px 4px rgba(217, 217, 217, 0.25);
+    border-radius: 5px;
+    border: none;
+    padding: 25px 0px 25px 30px;
+}
+
+.form__input
+{
+    width: 41.38%;
+}
+
+.form__textarea
+{
+    width: 94.60%;
+}
+
+.buttons_container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form__button
+{
+    margin: 0px;
+    width: 260px;
+}
+
+.social
+{
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social__link
+{
+    margin-right: 23px;
+}
+
+.social__link:last-child
+{
+    margin-right: 0px;
+}
+
+.social__image
+{
+    display: block;
+}
+
+.map
+{
+    flex-basis: 45%;
 }
