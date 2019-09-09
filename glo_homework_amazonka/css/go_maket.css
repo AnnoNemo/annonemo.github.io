@@ -23,6 +23,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+*, *:after, *:before
+{
+    box-sizing: border-box;
+}
+
 body
 {
     font-family: 'Circe', 'Roboto', sans-serif;
@@ -34,42 +39,33 @@ body
     font-family: 'Circe Extra', 'Roboto', sans-serif;
 }
 
-.padding
+.container-main
 {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.header-menu
+{
+    /* повторяется у всех */
     padding-left: 153px;
     padding-right: 153px;
-}
-
-.container_main
-{
-    width: 1440px;
-    background-color: #f8f8f8;
-    margin: 0px auto;
-    border-width: 0px 1px 0px 1px;
-    border-style: solid;
-    border-color: #ebebeb;
-}
-
-.header_menu
-{
+    /* конец */
     position: fixed;
     display: flex;
-    background-color: #f8f8f8;
-    width: 1134px;
-    height: 11.86%;
-    /* max-height: 116px; */
-    border-width: 0px 0px 1px 0px;
-    border-style: solid;
-    border-color: #aaaaaa;
-    z-index: 10;
-}
-
-.top
-{
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
+    max-width: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    max-height: 116px;
     justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    border-bottom: 1px solid #aaaaaa;
+    background-color: #f8f8f8;
 }
 
 .logo
@@ -116,6 +112,11 @@ a
 
 .header__content
 {
+    /* повторяется у всех */
+    padding-left: 153px;
+    padding-right: 153px;
+    /* конец */
+    background-color: #f8f8f8;
     display: flex;
     height: 764px;
     justify-content: space-between;
@@ -164,7 +165,10 @@ a
 
 .section__goods
 {
-    background-color: #ffffff;
+    /* повторяется у всех */
+    padding-left: 153px;
+    padding-right: 153px;
+    /* конец */
     height: 1249px;
     padding-top: 100px;
 }
@@ -185,8 +189,6 @@ a
 
 .card__item
 {
-    width: 298px;
-    height: 472px;
     background: #F8F8F8;
     box-shadow: 0px 4px 4px rgba(104, 104, 104, 0.102);
     border-radius: 5px;
@@ -233,9 +235,13 @@ a
 
 .section__review
 {
-    background-color: #ffffff;
+    /* повторяется у всех */
+    padding-left: 153px;
+    padding-right: 153px;
+    /* конец */
     height: 507px;
     padding-top: 73px;
+    background-color: #ffffff;
 }
 
 .cards__review
@@ -247,8 +253,6 @@ a
 
 .review_card
 {
-    /* width: 261px;
-    height: 250px; */
     border: 1px solid #EDEDED;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(131, 131, 131, 0.25);
@@ -270,6 +274,11 @@ a
 
 .footer.section
 {
+    /* повторяется у всех */
+    padding-left: 153px;
+    padding-right: 153px;
+    /* конец */
+    background: #F8F8F8;
     height: 645px;
     padding-top: 100px;
 }
@@ -305,12 +314,12 @@ a
 
 .form__input
 {
-    width: 41.38%;
+    width: 47%;
 }
 
 .form__textarea
 {
-    width: 94.60%;
+    width: 100%;
 }
 
 .buttons_container
