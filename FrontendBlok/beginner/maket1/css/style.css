@@ -1,6 +1,383 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import url("fonts.css");
 
 body
 {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.nav_menu
+{
+    font-size: 12px;
+    color: #6e7ea9;
+    font-weight: 700;
+}
+
+li > a
+{
+    color: inherit;
+}
+
+.button
+{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #1085e4;
+}
+
+h1
+{
+    font-size: 80px;
+    color: #192b59;
+    font-weight: 600;
+}
+
+.button-grey
+{
+    color: #7e8bae;
+    background-color: #cbdbe8;
+}
+
+h2 > span
+{
+    font-size: 14px;
+    font-weight: 800;
+    color: #1085e4;
+    display: block;
+}
+
+.grid > h2
+{
+    font-size: 40px;
+    color: #192b59;
+    font-weight: 700;
+}
+
+.grid_item h3
+{
+    font-size: 20px;
+    color: #192b59;
+    font-weight: 600;
+}
+
+p
+{
+    font-size: 16px;
+    color: #7581a1;
+    line-height: 26px;
+}
+
+.grid_item a
+{
+    font-size: 14px;
+    color: #1085e4;
+    font-weight: 600;
+}
+
+.grid_bottom > .cite_author
+{
+    font-size: 14px;
+    color: #1085e4;
+}
+
+.grid_bottom > .cite_author > span
+{
+    font-size: 16px;
+    color: #192b59;
+    font-weight: 700;
+}
+
+.subscribe
+{
+    background-color: #2377cd;
+}
+
+.subscribe > div > *
+{
+    color: #fff;
+}
+
+.subscribe > div > h2
+{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.subscribe > div > p
+{
+    font-size: 18px;
+}
+
+.subscribe form > input
+{
+    font-size: 14px;
+}
+
+.subscribe button
+{
+    font-size: 14px;
+}
+
+.breez
+{
+    color: #00bffe;
+}
+
+.features-2 h2
+{
+    font-size: 50px;
+    color: #192b59;
+    font-weight: 600;
+}
+
+.features-2 dt
+{
+    font-size: 16px;
+    color: #5a6789;
+    font-weight: 700;
+}
+
+.features-2 dd
+{
+    font-size: 14px;
+    color: #7581a1;
+    line-height: 24px;
+    margin-left: 0px;
+}
+
+.counter h2
+{
+    font-size: 50px;
+    color: #192b59;
+    font-weight: 600;
+}
+
+.counter h2 > span
+{
+    font-size: 16px;
+}
+
+.counter > ul
+{
+    font-size: 12px;
+    color: #1085e4;
+    font-weight: 800;
+}
+
+.counter > ul span
+{
+    font-size: 60px;
+    color: #bacbdc;
+    font-weight: 700;
+}
+
+.video > h2
+{
+    font-size: 50px;
+    color: #192b59;
+    font-weight: 600;
+}
+
+.video > .available
+{
+    font-weight: 700;
+}
+
+.features-3 h2
+{
+    font-size: 50px;
+    color: #192b59;
+    font-weight: 600;
+}
+
+.features-4 h2
+{
+    font-size: 50px;
+    color: #192b59;
+    font-weight: 600;
+}
+
+.screenshots h2
+{
+    font-size: 40px;
+    color: #192b59;
+    font-weight: 600;
+}
+
+.screenshots span
+{
+    font-size: 18px;
+}
+
+.clients h2
+{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    background-color: grey; //убрать, временный стиль чтобы текст было видно
+}
+
+.clients > div > h2 > span
+{
+    font-size: 18px;
+    color: #85c8ff;
+}
+
+.clients p
+{
+    font-size: 14px;
+}
+
+.client_info > p
+{
+    font-size: 14px;
+    color: #1085e4;
+    font-weight: 700;
+}
+
+.client_info > p > span
+{
+    font-size: 22px;
+    color: #000958;
+    font-weight: 600;
+    display: block;
+}
+
+.pricing h2
+{
+    font-size: 40px;
+    color: #192b59;
+    font-weight: 600;
+}
+
+.pricing h2 > span
+{
+    font-size: 18px;
+}
+
+.price
+{
+    font-size: 14px;
+    color: #0084ff;
+    font-weight: 700;
+}
+
+.price > #month
+{
+    font-size: 20px;
+    color: #7b8ab2;
+    font-weight: 700;
+    display: block;
+}
+
+.price .dollar
+{
+    font-size: 20px;
+    color: #192b59;
+    font-weight: 700;
+}
+
+.price .dollar > span
+{
+    font-size: 70px;
+}
+
+.pricing_plans ul
+{
+    font-size: 14px;
+    color: #8085b1;
+}
+
+.button-white
+{
+    font-size: 12px;
+    color: #8085b1;
+    font-weight: 700;
+    background-color: #f5faff;
+}
+
+.price_item:hover
+{
+    background-color: #192b59;
+}
+
+.price_item:hover *
+{
+    color: #fff;
+}
+
+.price_item:hover .button-white
+{
+    color: #fff;
+    background-color: #1a88e1;
+}
+
+.team h2
+{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    background-color: grey; //убрать, временный стиль чтобы текст было видно
+}
+
+.team > div > h2 > span
+{
+    font-size: 18px;
+    color: #85c8ff;
+}
+
+.team h3
+{
+    font-size: 26px;
+    color: #192b59;
+    font-weight: 600;
+}
+
+.team h3 > span
+{
+    font-size: 14px;
+    color: #1a88e1;
+    font-weight: 800;
+    display: block;
+}
+
+.contact_form h2
+{
+    font-size: 50px;
+    color: #192b59;
+    font-weight: 600;
+}
+
+.contact_form input, textarea
+{
+    font-size: 14px;
+    color: #8995b3;
+}
+
+.contact_form textarea
+{
+    font-size: 14px;
+    color: #8995b3;
+}
+
+footer > p
+{
+    font-size: 16px;
+    color: #b6bae0;
+}
+
+footer > p > a
+{
+    color: #1085e4;
 }
