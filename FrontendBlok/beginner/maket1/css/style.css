@@ -12,16 +12,19 @@ a
     text-decoration: none;
 }
 
-ul
-{
-    list-style-type: none;
-}
-
 .nav_menu
 {
+    list-style-type: none;
     font-size: 12px;
     color: #6e7ea9;
     font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav_menu li:last-child
+{
+    margin-top: 30px;   //временная конструкция, чтобы отлепить кнопку, удалить
 }
 
 li > a
@@ -35,6 +38,27 @@ li > a
     color: #fff;
     font-weight: 700;
     background-color: #1085e4;
+    letter-spacing: 2.35px;
+    padding: 21px 40px;
+    border-radius: 30px;
+    border: 1px solid #1085e4;
+}
+
+.button:hover
+{
+    color: #1085e4;
+    background-color: #fff;
+    border-color: #1085e4;
+}
+
+.btn-free
+{
+    margin-top: 100px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.89px;
+    padding: 20px 53px;
+    border: 1px solid #1085e4;
 }
 
 h1
@@ -44,10 +68,23 @@ h1
     font-weight: 600;
 }
 
+.button_group a:last-child
+{
+    margin-left: 18px;
+}
+
 .button-grey
 {
     color: #7e8bae;
     background-color: #cbdbe8;
+    border: 1px solid #cbdbe8;
+}
+
+.button-grey:hover
+{
+    color: #7e8bae;
+    background-color: #fff;
+    border: 1px solid #7e8bae;
 }
 
 h2 > span
@@ -125,9 +162,11 @@ p
     font-size: 14px;
 }
 
-.subscribe button
+.button.btn-subscribe
 {
     font-size: 14px;
+    letter-spacing: 2.35px;
+    padding: 17px 44px;
 }
 
 .breez
@@ -306,7 +345,19 @@ p
     color: #8085b1;
     font-weight: 700;
     background-color: #f5faff;
+    letter-spacing: 2.35px;
+    padding: 21px 40px;
+    border-radius: 30px;
+    border: 1px solid #dce1e5;
 }
+
+.price_item ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
 
 .price_item:hover
 {
@@ -319,6 +370,13 @@ p
 }
 
 .price_item:hover .button-white
+{
+    color: #fff;
+    background-color: #1a88e1;
+    border: 1px solid #1085e4;
+}
+
+.price_item:hover .button-white:hover
 {
     color: #fff;
     background-color: #1a88e1;
