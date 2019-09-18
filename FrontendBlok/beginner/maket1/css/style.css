@@ -1,4 +1,3 @@
-
 @import url("fonts.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
@@ -7,29 +6,46 @@ body
     font-family: 'Open Sans', sans-serif;
 }
 
+body > *
+{
+    max-width: 1110px;
+    margin: 0px auto;
+}
+
 a
 {
     text-decoration: none;
+}
+
+.header
+{
+    margin: 70px 0 0 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav_menu
 {
     list-style-type: none;
     font-size: 12px;
-    color: #6e7ea9;
     font-weight: 700;
+    display: flex;
     margin: 0px;
     padding: 0px;
 }
 
-.nav_menu li:last-child
+.nav-item
 {
-    margin-top: 30px;   //временная конструкция, чтобы отлепить кнопку, удалить
+    color: #6e7ea9;
+    padding: 0px;
+    margin: 0px 40px 0px 0px;
+    justify-content: center;
+    letter-spacing: 4px;
 }
 
 li > a
 {
-    color: inherit;
+    /* color: inherit; */
 }
 
 .button
@@ -61,11 +77,25 @@ li > a
     border: 1px solid #1085e4;
 }
 
+.main-screen
+{
+    max-width: 1110px;
+}
+
 h1
 {
     font-size: 80px;
     color: #192b59;
     font-weight: 600;
+    max-width: 540px;
+    line-height: 90px;
+    letter-spacing: -2.3px;
+}
+
+.button_group
+{
+    margin-top: 68px;
+    margin-left: 7px;
 }
 
 .button_group a:last-child
@@ -86,6 +116,13 @@ h1
     background-color: #fff;
     border: 1px solid #7e8bae;
 }
+
+.sponsors ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
 
 h2 > span
 {
@@ -138,6 +175,7 @@ p
 
 .subscribe
 {
+    display: flex;
     background-color: #2377cd;
 }
 
@@ -196,6 +234,11 @@ p
     margin-left: 0px;
 }
 
+.counter
+{
+    text-align: center;
+}
+
 .counter h2
 {
     font-size: 50px;
@@ -210,6 +253,10 @@ p
 
 .counter > ul
 {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
     font-size: 12px;
     color: #1085e4;
     font-weight: 800;
@@ -217,9 +264,15 @@ p
 
 .counter > ul span
 {
+    display: block;
     font-size: 60px;
     color: #bacbdc;
     font-weight: 700;
+}
+
+.video
+{
+    display: flex;
 }
 
 .video > h2
@@ -234,6 +287,11 @@ p
     font-weight: 700;
 }
 
+.features-3
+{
+    display: flex;
+}
+
 .features-3 h2
 {
     font-size: 50px;
@@ -241,11 +299,26 @@ p
     font-weight: 600;
 }
 
+.features-4
+{
+    display: flex;
+}
+
 .features-4 h2
 {
     font-size: 50px;
     color: #192b59;
     font-weight: 600;
+}
+
+.button.btn-ft4
+{
+    padding: 21px 62px;
+}
+
+.screenshots
+{
+    text-align: center;
 }
 
 .screenshots h2
@@ -259,6 +332,9 @@ p
 {
     font-size: 18px;
 }
+
+.clients
+{}
 
 .clients h2
 {
@@ -274,9 +350,19 @@ p
     color: #85c8ff;
 }
 
+.clients-cards
+{
+    display: flex;
+}
+
 .clients p
 {
     font-size: 14px;
+}
+
+.client_info
+{
+    display: flex;
 }
 
 .client_info > p
@@ -294,6 +380,11 @@ p
     display: block;
 }
 
+.pricing
+{
+    text-align: center;
+}
+
 .pricing h2
 {
     font-size: 40px;
@@ -304,6 +395,12 @@ p
 .pricing h2 > span
 {
     font-size: 18px;
+}
+
+.pricing_plans
+{
+    display: flex;
+    justify-content: space-between;
 }
 
 .price
@@ -346,7 +443,7 @@ p
     font-weight: 700;
     background-color: #f5faff;
     letter-spacing: 2.35px;
-    padding: 21px 40px;
+    padding: 22px 62px;
     border-radius: 30px;
     border: 1px solid #dce1e5;
 }
@@ -382,12 +479,23 @@ p
     background-color: #1a88e1;
 }
 
+.team
+{
+    text-align: center;
+}
+
 .team h2
 {
     font-size: 40px;
     color: #fff;
     font-weight: 600;
     background-color: grey; //убрать, временный стиль чтобы текст было видно
+}
+
+.team-people
+{
+    display: flex;
+    justify-content: space-around;
 }
 
 .team > div > h2 > span
@@ -411,6 +519,11 @@ p
     display: block;
 }
 
+.contact_form
+{
+    display: flex;
+}
+
 .contact_form h2
 {
     font-size: 50px;
@@ -430,6 +543,12 @@ p
     color: #8995b3;
 }
 
+footer
+{
+    display: flex;
+    background-color: #192b59;
+}
+
 footer > p
 {
     font-size: 16px;
@@ -439,4 +558,16 @@ footer > p
 footer > p > a
 {
     color: #1085e4;
+}
+
+footer ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+footer ul > li
+{
+    margin-left: 10px; //удалить
 }
