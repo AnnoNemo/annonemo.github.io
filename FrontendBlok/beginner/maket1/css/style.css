@@ -6,7 +6,7 @@ body
     font-family: 'Open Sans', sans-serif;
 }
 
-body > *
+.wrap
 {
     max-width: 1110px;
     margin: 0px auto;
@@ -19,7 +19,7 @@ a
 
 .header
 {
-    margin: 70px 0 0 0;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
 }
@@ -41,11 +41,6 @@ a
     margin: 0px 40px 0px 0px;
     justify-content: center;
     letter-spacing: 4px;
-}
-
-li > a
-{
-    /* color: inherit; */
 }
 
 .button
@@ -241,33 +236,46 @@ p
 
 .counter h2
 {
+    max-width: 540px;
     font-size: 50px;
     color: #192b59;
     font-weight: 600;
+    letter-spacing: -1.5px;
+    line-height: 60px;
+    margin-bottom: 55px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .counter h2 > span
 {
     font-size: 16px;
+    letter-spacing: 3.3px;
+    margin-bottom: 11px;
+    line-height: normal;
 }
 
-.counter > ul
+.counter_block
 {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    text-align: center;
     font-size: 12px;
     color: #1085e4;
     font-weight: 800;
+    letter-spacing: 2.28px;
+    margin: 0px -12px 0px -11px;
+    padding-left: 0px;
 }
 
-.counter > ul span
+.counter-value
 {
     display: block;
     font-size: 60px;
     color: #bacbdc;
     font-weight: 700;
+    margin-bottom: 8.4px;
+    letter-spacing: -0.1;
 }
 
 .video
@@ -321,27 +329,43 @@ p
     text-align: center;
 }
 
+.screenshots > div
+{
+    line-height: 0px;
+}
+
+.screenshots > div *
+{
+    line-height: 1.15;
+}
+
 .screenshots h2
 {
     font-size: 40px;
     color: #192b59;
     font-weight: 600;
+    letter-spacing: -1.16px;
+    margin-bottom: 72px;
 }
 
 .screenshots span
 {
     font-size: 18px;
+    letter-spacing: 3.7px;
+    margin-bottom: 21px;
 }
 
-.clients
-{}
+.screenshots img
+{
+    margin-right: 11px;
+}
 
 .clients h2
 {
     font-size: 40px;
     color: #fff;
     font-weight: 600;
-    background-color: grey; //убрать, временный стиль чтобы текст было видно
+    background-color: grey; /*убрать, временный стиль чтобы текст было видно*/
 }
 
 .clients > div > h2 > span
@@ -390,11 +414,15 @@ p
     font-size: 40px;
     color: #192b59;
     font-weight: 600;
+    letter-spacing: -1.16px;
+    margin-bottom: 83px;
 }
 
 .pricing h2 > span
 {
     font-size: 18px;
+    letter-spacing: 3.7px;
+    margin-bottom: 21px;
 }
 
 .pricing_plans
@@ -408,6 +436,8 @@ p
     font-size: 14px;
     color: #0084ff;
     font-weight: 700;
+    letter-spacing: 2.8px;
+    margin-bottom: 28px;
 }
 
 .price > #month
@@ -416,6 +446,8 @@ p
     color: #7b8ab2;
     font-weight: 700;
     display: block;
+    letter-spacing: 0px;
+    margin-bottom: 16px;
 }
 
 .price .dollar
@@ -428,12 +460,39 @@ p
 .price .dollar > span
 {
     font-size: 70px;
+    letter-spacing: -1.9px;
 }
 
 .pricing_plans ul
 {
     font-size: 14px;
     color: #8085b1;
+}
+
+.price_item
+{
+    flex-basis: 31.6%;
+    padding: 75px 0px 81px 0px;
+}
+
+.price_item ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    line-height: 40px;
+    margin-bottom: 38px;
+}
+
+
+.price_item:hover
+{
+    background-color: #192b59;
+}
+
+.price_item:hover *
+{
+    color: #fff;
 }
 
 .button-white
@@ -446,24 +505,6 @@ p
     padding: 22px 62px;
     border-radius: 30px;
     border: 1px solid #dce1e5;
-}
-
-.price_item ul
-{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-
-.price_item:hover
-{
-    background-color: #192b59;
-}
-
-.price_item:hover *
-{
-    color: #fff;
 }
 
 .price_item:hover .button-white
@@ -489,7 +530,7 @@ p
     font-size: 40px;
     color: #fff;
     font-weight: 600;
-    background-color: grey; //убрать, временный стиль чтобы текст было видно
+    background-color: grey; /*убрать, временный стиль чтобы текст было видно*/
 }
 
 .team-people
@@ -531,6 +572,12 @@ p
     font-weight: 600;
 }
 
+.contact_form .form
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .contact_form input, textarea
 {
     font-size: 14px;
@@ -569,5 +616,25 @@ footer ul
 
 footer ul > li
 {
-    margin-left: 10px; //удалить
+    margin-left: 10px; /*удалить*/
+}
+
+/* Block position & backgrounds */
+
+.counter
+{
+    padding-top: 75px;
+    background-color: #edf6ff;
+    padding-bottom: 117px;
+}
+
+.screenshots
+{
+    padding-top: 83px;
+    background-color: #edf6ff;
+}
+
+.pricing
+{
+    padding-top: 83px;
 }
