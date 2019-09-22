@@ -1,9 +1,15 @@
 @import url("fonts.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
+*, *::after, *::before
+{
+    box-sizing: border-box;
+}
+
 body
 {
     font-family: 'Open Sans', sans-serif;
+    width: 100.8934%;; /*Обязательно удалить в конце!!!*/
 }
 
 .wrap
@@ -17,11 +23,27 @@ a
     text-decoration: none;
 }
 
+header
+{
+    position: relative;
+}
+
 .header
 {
-    margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.main_logo
+{
+    display: block;
+    color: transparent;
+    content: "";
+    width: 187px;
+    height: 56px;
+    background-image: url("../imgs/logo/logo-main.png");
+    background-repeat: no-repeat;
 }
 
 .nav_menu
@@ -34,13 +56,22 @@ a
     padding: 0px;
 }
 
+.nav_menu li
+{
+    margin: 0px 39px 0px 0px;
+}
+
+.nav_menu li:last-child
+{
+    margin-right: 0px;
+}
+
 .nav-item
 {
     color: #6e7ea9;
     padding: 0px;
-    margin: 0px 40px 0px 0px;
     justify-content: center;
-    letter-spacing: 4px;
+    letter-spacing: 2.28px;
 }
 
 .button
@@ -50,7 +81,7 @@ a
     font-weight: 700;
     background-color: #1085e4;
     letter-spacing: 2.35px;
-    padding: 21px 40px;
+    padding: 20px 41px 21px 41px;
     border-radius: 30px;
     border: 1px solid #1085e4;
 }
@@ -68,13 +99,13 @@ a
     color: #fff;
     font-weight: 400;
     letter-spacing: 1.89px;
-    padding: 20px 53px;
+    padding: 21px 54px 20px 54px;
     border: 1px solid #1085e4;
 }
 
 .main-screen
 {
-    max-width: 1110px;
+    padding-bottom: 335px;
 }
 
 h1
@@ -85,17 +116,17 @@ h1
     max-width: 540px;
     line-height: 90px;
     letter-spacing: -2.3px;
+    margin-top: 300px;
 }
 
 .button_group
 {
-    margin-top: 68px;
-    margin-left: 7px;
+    margin-top: 67px;
 }
 
 .button_group a:last-child
 {
-    margin-left: 18px;
+    margin-left: 15px;
 }
 
 .button-grey
@@ -112,10 +143,63 @@ h1
     border: 1px solid #7e8bae;
 }
 
+.img_main_screen
+{
+    display: block;
+    width: 895px;
+    height: 740px;
+    position: absolute;
+    background-image: url("../imgs/elmts/screen_header_block1.png");
+    background-repeat: no-repeat;
+    right: 0px;
+    top: 189px;
+}
+
 .sponsors ul
 {
-    display: flex;
+    padding: 104px 0px 101px;
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: transparent;
+}
+
+.sponsors li
+{
+    display: block;
+}
+
+.s_logo1
+{
+    width: 198px;
+    height: 58px;
+    background-image: url("../imgs/logo/logo1_sponsors_block2.png");
+    background-repeat: no-repeat;
+}
+
+.s_logo2
+{
+    width: 200px;
+    height: 69px;
+    background-image: url("../imgs/logo/logo2_sponsors_block2.png");
+    background-repeat: no-repeat;
+}
+
+.s_logo3
+{
+    width: 201px;
+    height: 47px;
+    background-image: url("../imgs/logo/logo3_sponsors_block2.png");
+    background-repeat: no-repeat;
+}
+
+.s_logo4
+{
+    width: 200px;
+    height: 69px;
+    background-image: url("../imgs/logo/logo4_sponsors_block2.png");
+    background-repeat: no-repeat;
 }
 
 
@@ -168,37 +252,87 @@ p
     font-weight: 700;
 }
 
-.subscribe
+.subscribe_block
 {
     display: flex;
-    background-color: #2377cd;
+    justify-content: space-between;
+    padding: 52px 0px 52px 0px;
 }
 
-.subscribe > div > *
+.subscribe_content *, .subscribe_form *
 {
     color: #fff;
 }
 
-.subscribe > div > h2
+.subscribe_content
+{
+    max-width: 435px;
+}
+
+.subscribe_content > h2
 {
     font-size: 50px;
     font-weight: 600;
+    letter-spacing: -1.5px;
+    margin-top: 65px;
+    margin-bottom: 27px;
 }
 
-.subscribe > div > p
+.subscribe_content > h2 span
+{
+    letter-spacing: 2.8px;
+    margin-bottom: 21px;
+}
+
+.subscribe_content > p
 {
     font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 37px;
 }
 
-.subscribe form > input
+.subscribe_form
+{
+    border: 2px solid #456fbe;
+    border-radius: 35px;
+    padding: 7px 8px 7px 28px;
+}
+
+.subscribe_form > form
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.subscribe_form > form > input
 {
     font-size: 14px;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    width: 310px;
+}
+
+.subscribe_form > form > input::-moz-placeholder
+{
+     color: b1c3ee;
+}
+
+.subscribe_form > form > input::-webkit-input-placeholder
+{
+    color: b1c3ee;
+}
+
+.subscribe_form > form > input:focus
+{
+    outline: none;
 }
 
 .button.btn-subscribe
 {
     font-size: 14px;
-    letter-spacing: 2.35px;
+    letter-spacing: 2.85px;
     padding: 17px 44px;
 }
 
@@ -351,7 +485,7 @@ p
 .screenshots span
 {
     font-size: 18px;
-    letter-spacing: 3.7px;
+    letter-spacing: 3.5px;
     margin-bottom: 21px;
 }
 
@@ -603,36 +737,68 @@ p
     color: #8995b3;
 }
 
-footer
+.footer_block
 {
     display: flex;
-    background-color: #192b59;
 }
 
-footer > p
+.footer_block > p
 {
     font-size: 16px;
     color: #b6bae0;
 }
 
-footer > p > a
+.footer_block > p > a
 {
     color: #1085e4;
 }
 
-footer ul
+.footer_block ul
 {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
 
-footer ul > li
+.footer_block ul > li
 {
     margin-left: 10px; /*удалить*/
 }
 
 /* Block position & backgrounds */
+
+header
+{
+    background-image: url("../imgs/bg/background_header_block1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+.header
+{
+    padding-top: 51px;
+}
+
+.sponsors
+{
+    background-image: url("../imgs/bg/background_sponsors_block2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.subscribe
+{
+    background: rgba(10,32,144,1);
+    background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,119,205,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,119,205,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,119,205,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,119,205,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,119,205,1) 100%);
+    background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,119,205,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2377cd', GradientType=1 );
+}
 
 .counter
 {
@@ -650,4 +816,9 @@ footer ul > li
 .pricing
 {
     padding-top: 83px;
+}
+
+footer
+{
+    background-color: #192b59;
 }
