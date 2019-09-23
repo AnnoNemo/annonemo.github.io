@@ -9,7 +9,7 @@
 body
 {
     font-family: 'Open Sans', sans-serif;
-    width: 100.8934%;; /*Обязательно удалить в конце!!!*/
+    width: 1920px; /*Обязательно удалить в конце!!!*/
 }
 
 .wrap
@@ -314,15 +314,29 @@ p
     width: 310px;
 }
 
+/* начало изменения цвета подсказки */
+
 .subscribe_form > form > input::-moz-placeholder
 {
-     color: b1c3ee;
+    color: #b1c3ee;
 }
 
 .subscribe_form > form > input::-webkit-input-placeholder
 {
-    color: b1c3ee;
+    color: #b1c3ee;
 }
+
+.subscribe_form > form > input:-moz-placeholder
+{
+    color: #b1c3ee;
+}
+
+.subscribe_form > form > input:-webkit-input-placeholder
+{
+    color: #b1c3ee;
+}
+
+/* конец изменения цвета подсказки */
 
 .subscribe_form > form > input:focus
 {
@@ -363,22 +377,20 @@ p
     margin-left: 0px;
 }
 
-.counter
+.counter > .wrap > *
 {
     text-align: center;
 }
 
 .counter h2
 {
-    max-width: 540px;
     font-size: 50px;
     color: #192b59;
     font-weight: 600;
     letter-spacing: -1.5px;
     line-height: 60px;
-    margin-bottom: 55px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto 55px auto;
+    padding-left: 20px;
 }
 
 .counter h2 > span
@@ -402,6 +414,13 @@ p
     padding-left: 0px;
 }
 
+.counter_item
+{
+    text-align: center;
+    letter-spacing: 2.4px;
+    padding-left: 7px;
+}
+
 .counter-value
 {
     display: block;
@@ -409,7 +428,7 @@ p
     color: #bacbdc;
     font-weight: 700;
     margin-bottom: 8.4px;
-    letter-spacing: -0.1;
+    letter-spacing: -2px;
 }
 
 .video
@@ -762,7 +781,7 @@ p
 
 .footer_block ul > li
 {
-    margin-left: 10px; /*удалить*/
+     /*удалить*/
 }
 
 /* Block position & backgrounds */
@@ -790,6 +809,7 @@ header
 
 .subscribe
 {
+    /*начало блока с градиентом для фона*/
     background: rgba(10,32,144,1);
     background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,119,205,1) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,119,205,1)));
@@ -798,6 +818,7 @@ header
     background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,119,205,1) 100%);
     background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,119,205,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2377cd', GradientType=1 );
+    /*конец блока с градиентом для фона*/
 }
 
 .counter
@@ -805,6 +826,9 @@ header
     padding-top: 75px;
     background-color: #edf6ff;
     padding-bottom: 117px;
+    background-image: url("../imgs/bg/background_counters_block6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .screenshots
