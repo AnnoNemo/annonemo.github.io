@@ -211,11 +211,145 @@ h2 > span
     display: block;
 }
 
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-areas:"a c d"
+                        "b c d"
+                        "b f g"
+                        "e f g"
+                        "e h h"
+}
+
+.grid_header
+{
+    grid-area: a;
+}
+
+.g_item1
+{
+    grid-area: b;
+}
+
+.g_item2
+{
+    grid-area: c;
+}
+
+.g_item3
+{
+    grid-area: d;
+}
+
+.g_item4
+{
+    grid-area: e;
+}
+
+.g_item5
+{
+    grid-area: f;
+}
+
+.g_item6
+{
+    grid-area: g;
+}
+
+.grid_cite
+{
+    grid-area: h;
+}
+
+.g_item1, .g_item4
+{
+    justify-self: start;
+    align-self: start;
+}
+
+.g_item2, .g_item3, .g_item5, .g_item6
+{
+    justify-self: end;
+    align-self: end;
+}
+
+.grid_cite
+{
+    justify-self: end;
+    align-self: end;
+}
+
 .grid > h2
 {
+    margin: 0px;
+    max-width: 285px;
     font-size: 40px;
     color: #192b59;
     font-weight: 700;
+}
+
+.grid > h2 span
+{
+    letter-spacing: 2.6px;
+    margin-bottom: 18px;
+}
+
+.grid_item
+{
+    display: block;
+    width: 350px;
+    padding: 20px 39px 48px;
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.grid_item > *
+{
+    text-align: center;
+}
+
+.grid_logo
+{
+    display: block;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.grid_logo_img1
+{
+    background-image: url("../imgs/icon/icon1_features_block2.png");
+}
+
+.grid_logo_img2
+{
+    background-image: url("../imgs/icon/icon2_features_block2.png");
+}
+
+.grid_logo_img3
+{
+    background-image: url("../imgs/icon/icon3_features_block2.png");
+}
+
+.grid_logo_img4
+{
+    background-image: url("../imgs/icon/icon4_features_block2.png");
+}
+
+.grid_logo_img5
+{
+    background-image: url("../imgs/icon/icon5_features_block2.png");
+}
+
+.grid_logo_img6
+{
+    background-image: url("../imgs/icon/icon6_features_block2.png");
 }
 
 .grid_item h3
@@ -234,6 +368,7 @@ p
 
 .grid_item a
 {
+    display: block;
     font-size: 14px;
     color: #1085e4;
     font-weight: 600;
@@ -806,6 +941,10 @@ header
     background-repeat: no-repeat;
 }
 
+.features-1
+{
+    padding: 120px 0px 87px 0px;
+}
 
 .subscribe
 {
