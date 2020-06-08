@@ -494,19 +494,64 @@ p
     color: #00bffe;
 }
 
+.features-icon
+{
+    height: 150px;
+    width: 150px;
+}
+
+.features-2 .features-icon::before
+{
+    margin-top: 83px;
+    margin-left: 108px;
+}
+
+.features-2 .wrap
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.features-2 .right-block
+{
+    position: relative;
+    margin-right: 0px;
+    max-width: 55%;
+}
+
 .features-2 h2
 {
+    margin-top: 220px;
+    margin-bottom: 30px;
     font-size: 50px;
     color: #192b59;
     font-weight: 600;
 }
 
+.features-2 p
+{
+    margin: 0px 0px 33px 0px;
+}
+
+.features-2 .features-list
+{
+    max-height: 315px;
+    padding-left: 4px;
+    padding-right: 50px;
+    margin: 0px 0px 186px 0px;
+    overflow: hidden;
+    overflow: auto;
+}
+
 .features-2 dt
 {
     font-size: 16px;
+    margin-bottom: 15px;
     color: #5a6789;
     font-weight: 700;
 }
+
 
 .features-2 dd
 {
@@ -514,6 +559,21 @@ p
     color: #7581a1;
     line-height: 24px;
     margin-left: 0px;
+}
+
+.features-2 dd::after
+{
+    content: "";
+    display: block;
+    width: 510px;
+    height: 1px;
+    margin: 27px 0px 28px 2px;
+    background-color: #F2F2F2;
+}
+
+.features-2 dd:last-of-type::after
+{
+    display: none;
 }
 
 .counter > .wrap > *
@@ -819,10 +879,17 @@ p
     content: "";
     width: 58px;
     height: 100%;
-    background-image: url(../imgs/elmts/bg-b.svg);
+    background-image: url("../imgs/elmts/bg-b.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.price_item:hover::after
+{
+    background-image: none;
 }
 
 .team
@@ -963,6 +1030,49 @@ header
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2377cd', GradientType=1 );
     /*конец блока с градиентом для фона*/
 }
+
+.features-icon::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../imgs/icon/icon_ft2_block5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+
+.features-2
+{
+    position: relative;
+    max-height: 1002px;
+    background-image: url("../imgs/bg/background_ft2_block5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.features-2::before
+{
+    content: "";
+    background-image: url("../imgs/elmts/note_ft2_block5.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 18px;
+    width: 1067px;
+    height: 991px;
+}
+
+/* Стили для скролла */
+.features-2 .features-list::-webkit-scrollbar { width: 5px; height: 4px; }
+.features-2 .features-list::-webkit-scrollbar-track {  background-color: #F4F7FF; margin-top: 4px; }
+.features-2 .features-list::-webkit-scrollbar-track-piece { background-color: #F4F7FF; }
+.features-2 .features-list::-webkit-scrollbar-thumb { height: 5px; background-color: #1D8CE5; border-radius: 20px; }
+.features-2 .features-list::-webkit-scrollbar-corner { display: none; }
+.features-2 .features-list::-webkit-resizer { display: none; }
+.features-2 .features-list::-webkit-scrollbar:horizontal { display: none; }
+.features-2 .features-list::-webkit-scrollbar-button:vertical:double-button { display: none; }
+.features-2 .features-list::-webkit-scrollbar-button:vertical:single-button { display: none; }
+/* конец стилей для скролла */
 
 .counter
 {
