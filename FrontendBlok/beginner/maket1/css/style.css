@@ -494,16 +494,13 @@ p
     color: #00bffe;
 }
 
-.features-icon
-{
-    height: 150px;
-    width: 150px;
+.features-2 .features-icon {
+    width: 42px;
 }
 
 .features-2 .features-icon::before
 {
     margin-top: 83px;
-    margin-left: 108px;
 }
 
 .features-2 .wrap
@@ -539,7 +536,7 @@ p
     max-height: 315px;
     padding-left: 4px;
     padding-right: 50px;
-    margin: 0px 0px 186px 0px;
+    margin: 0px 0px 186px 4px;
     overflow: hidden;
     overflow: auto;
 }
@@ -632,43 +629,157 @@ p
 
 .video
 {
-    display: flex;
+    position: relative;
+    padding-bottom: 98px;
 }
 
-.video > h2
+.video_left_content
 {
+    padding-top: 111px;
+    max-width: 610px;
+}
+
+.video_left_content  .video_main_title
+{
+    margin: 0px 0px 0px -4px;
     font-size: 50px;
     color: #192b59;
     font-weight: 600;
+    letter-spacing: -1.4px;
+    line-height: 1.2;
 }
 
-.video > .available
+.video_left_content .video_main_description
+{
+    margin: 36px 0px 27px 0px;
+}
+
+.video_left_content .available
 {
     font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.video_left_content .block_app_buttons
+{
+    max-width: 356px;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 21px;
+    margin-left: -5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.video .video_player_block
+{
+    position: absolute;
+    right: 236px;
+    top: 19px;
 }
 
 .features-3
 {
-    display: flex;
+    position: relative;
 }
 
-.features-3 h2
+.features-3_statistic_image
 {
+    position: absolute;
+    top: 159px;
+    left: 384px;
+}
+
+.features-3 .wrap
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.features-3 .features-3_content
+{
+    padding-top: 217px;
+    padding-left: 34px;
+    max-width: 650px;
+}
+
+.features-3 .features-icon::before
+{
+    margin-top: 89px;
+}
+
+.features-3_main_description
+{
+    padding-bottom: 143px;
+    padding-left: 10px;
+}
+
+.features-3_main_description h2
+{
+    margin: 8px 0px 26px 0px;
     font-size: 50px;
     color: #192b59;
     font-weight: 600;
+    letter-spacing: -1.5px;
+    line-height: 1.2;
+}
+
+.features-3_main_description p
+{
+    margin-bottom: 54px;
+    margin-left: 2px;
+}
+
+.features-3_main_description .button
+{
+    margin-left: 2px;
 }
 
 .features-4
 {
-    display: flex;
+    position: relative;
+}
+
+.features-4 .features-icon::before
+{
+    margin-top: 90px;
+    margin-left: -14px;
 }
 
 .features-4 h2
 {
+    margin: 0px;
+    padding-top: 228px;
+    padding-left: 30px;
     font-size: 50px;
     color: #192b59;
     font-weight: 600;
+    letter-spacing: -1.2px;
+    line-height: 1.2;
+}
+
+.features-4_content
+{
+    max-width: 630px;
+    padding-bottom: 142px;
+}
+
+.features-4_content p
+{
+    margin: 24px 0px 55px 31px;
+}
+
+.features-4_content a.button.btn-ft4 {
+    margin: 0px 0px 0px 34px;
+}
+
+.features-4_statistic_image
+{
+    position: absolute;
+    top: 146px;
+    right: 383px;
 }
 
 .button.btn-ft4
@@ -714,6 +825,8 @@ p
 
 .clients h2
 {
+    margin: 0;
+    padding-top: 195px;
     font-size: 40px;
     color: #fff;
     font-weight: 600;
@@ -722,6 +835,7 @@ p
 
 .clients > div > h2 > span
 {
+    padding-bottom: 21px;
     font-size: 18px;
     color: #85c8ff;
 }
@@ -792,7 +906,7 @@ p
     margin-bottom: 28px;
 }
 
-.price > #month
+.price > .month
 {
     font-size: 20px;
     color: #7b8ab2;
@@ -1078,16 +1192,40 @@ header
 {
     padding-top: 75px;
     background-color: #edf6ff;
-    padding-bottom: 117px;
+    padding-bottom: 119px;
     background-image: url("../imgs/bg/background_counters_block6.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.features-3
+{
+    content: "";
+    background-image: url("../imgs/bg/background_ft3_block8.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.features-4
+{
+    content: "";
+    background-image: url("../imgs/bg/background_ft4_block9.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .screenshots
 {
     padding-top: 83px;
     background-color: #edf6ff;
+}
+
+.clients
+{
+    content: "";
+    background-image: url("../imgs/bg/background_clients_block11.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pricing
